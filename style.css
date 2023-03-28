@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+nav {
+  position: sticky;
+  background: rgb(0, 0, 0);
+  color: white;
+  font-size: 1.5rem;
+  top: 0;
+}
+
+.top-menu {
+  padding: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-menu ul {
+  display: flex;
+  list-style: none;
+  line-height: 3rem;
+}
+
+.top-menu ul li {
+  margin-left: 1rem;
+  transition: color 0.5s;
+  transition: transform 1s;
+}
+
+.top-menu ul li:hover {
+  /* border-bottom: 2px solid red; */
+  color: red;
+  cursor: pointer;
+  transform: scale(1.3);
+  /* font-size: 4rem; */
+}
+
+.logo {
+  background: linear-gradient(
+    rgba(116, 232, 116, 0.516),
+    rgba(255, 255, 0, 0.539)
+  );
+
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+/* Hero Section */
+.video {
+  min-height: 60vh;
+  position: relative;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video > div {
+  color: white;
+  width: 400px;
+  position: absolute;
+  top: 20vh;
+  left: 10vw;
+
+  background: rgba(64, 147, 255, 0.231);
+  border-radius: 20px;
+  padding: 10px;
+  backdrop-filter: blur(10px);
+}
+
+/* Image section */
+.img1,
+.img2,
+.img3,
+.img4 {
+  height: 70vh;
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img1 {
+  background: url(assets/a.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.img2 {
+  background: url(assets/b.jpg) no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.img3 {
+  background: url(assets/c.jpg) no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.img4 {
+  background: url(assets/d.jpg) no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* footer */
+footer {
+  background: black;
+  padding: 3rem;
+  margin-top: 2rem;
+  text-align: Center;
+  color: white;
+}
+
+.title {
+  background: rgba(0, 0, 0, 0.408);
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 3rem;
+  letter-spacing: 10px;
+}
